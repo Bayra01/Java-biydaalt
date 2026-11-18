@@ -37,6 +37,7 @@ const LOADERS = {
 
 export function render() {
   renderHeader();
+  document.body.classList.toggle('is-auth', !S.user);
   // Нэвтрээгүй бол зөвхөн нэвтрэх хуудас харагдана
   if (!S.user) {
     clearInterval(S.timer);
