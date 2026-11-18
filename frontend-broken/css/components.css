@@ -1,0 +1,31 @@
+/* Дахин ашиглагдах бүрэлдэхүүнүүд: card, form, button, badge, table ... */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px}
+.field{display:flex;flex-direction:column;gap:4px;flex:1;min-width:130px}
+.field label{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+input,select{font:inherit;padding:9px 10px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--text);width:100%}
+input:focus,select:focus{outline:2px solid var(--brand2);outline-offset:0}
+.btn{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--text);padding:9px 16px;border-radius:9px;cursor:pointer;font-weight:600}
+.btn:hover{filter:brightness(.97)} .btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.primary{background:var(--brand2);border-color:var(--brand2);color:#fff}
+.btn.accent{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.danger{color:var(--bad);border-color:var(--bad)} .btn.ghost{background:transparent;color:inherit;border-color:rgba(255,255,255,.35)}
+.btn.sm{padding:5px 10px;font-size:13px} .btn.block{width:100%;margin-top:12px}
+.badge{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.badge.PENDING{background:var(--warn-bg);color:var(--warn)} .badge.CONFIRMED{background:var(--info-bg);color:var(--info)}
+.badge.CHECKED_IN{background:var(--ok-bg);color:var(--ok)} .badge.CHECKED_OUT{background:var(--line);color:var(--muted)}
+.badge.CANCELLED,.badge.EXPIRED{background:var(--bad-bg);color:var(--bad)}
+.badge.FAILED{background:var(--bad-bg);color:var(--bad)} .badge.PAID{background:var(--ok-bg);color:var(--ok)} .badge.REFUNDED{background:var(--warn-bg);color:var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+.kv{display:grid;grid-template-columns:140px 1fr;gap:6px 12px;margin:10px 0} .kv dt{color:var(--muted)} .kv dd{margin:0;font-weight:600}
+.notice{padding:10px 14px;border-radius:10px;margin:12px 0;font-size:14px}
+.notice.info{background:var(--info-bg);color:var(--info)} .notice.warn{background:var(--warn-bg);color:var(--warn)} .notice.bad{background:var(--bad-bg);color:var(--bad)}
+.tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.tab{padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font:inherit;color:var(--text)}
+.tab.on{background:var(--brand2);border-color:var(--brand2);color:#fff}
+.stat{padding:16px} .stat .n{font-size:28px;font-weight:800} .stat .l{color:var(--muted);font-size:13px}
+.empty{text-align:center;padding:40px 10px;color:var(--muted)}
+#toasts{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:8px;z-index:60}
+.toast{padding:11px 16px;border-radius:10px;color:#fff;background:var(--brand2);box-shadow:0 4px 14px rgba(0,0,0,.25);max-width:340px}
+.toast.bad{background:var(--bad)} .toast.ok{background:var(--ok)}

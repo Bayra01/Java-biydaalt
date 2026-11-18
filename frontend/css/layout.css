@@ -1,0 +1,17 @@
+/* Хуудасны ерөнхий зохион байгуулалт: header, цэс, grid */
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+main{padding-top:24px;padding-bottom:60px}
+.top{background:var(--brand);color:#fff;position:sticky;top:0;z-index:10}
+.bar{display:flex;align-items:center;gap:16px;height:60px;flex-wrap:wrap}
+.logo{font-weight:700;font-size:18px;display:flex;align-items:center;gap:10px;cursor:pointer;letter-spacing:.3px}
+.mark{background:var(--accent);color:var(--accent-ink);width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-weight:800}
+#nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.navbtn{background:none;border:0;color:#cfe3e3;padding:8px 12px;border-radius:8px;cursor:pointer;font:inherit}
+.navbtn:hover{background:rgba(255,255,255,.1)} .navbtn.on{background:rgba(255,255,255,.18);color:#fff}
+#who{display:flex;align-items:center;gap:8px}
+.chip{background:rgba(255,255,255,.14);padding:4px 10px;border-radius:999px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.between{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+.scroll{overflow-x:auto}
+@media(max-width:600px){.kv{grid-template-columns:110px 1fr}.bars .b{grid-template-columns:70px 1fr 90px}}
